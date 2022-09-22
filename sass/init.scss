@@ -24,12 +24,12 @@ th,
 h2,
 h3 {
   // font-family: "Aleo", sans-serif;
-  font-family: "Quicksand";
+  font-family: "Noticia Text";
   // color: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6, .body_text blockquote.sisip {
-  font-family: 'Quicksand' !important;
+  font-family: 'Noticia Text' !important;
 }
 
 main {
@@ -66,7 +66,7 @@ main {
 .font {
   &-bold {
     // font-weight: bold;
-    font-family: "Quicksand", serif;
+    font-family: "Noticia Text", serif;
     font-weight: 700;
     // font-family: "Bebas Neue", serif;
   }
@@ -89,6 +89,9 @@ main {
 
   &-stdbig {
     font-size: 24px;
+  }
+  &-20 {
+    font-size: 20px;
   }
 }
 
@@ -114,6 +117,9 @@ main {
 
   &-grey {
     color: gray;
+  }
+  &-black {
+    color: #222;
   }
 }
 
