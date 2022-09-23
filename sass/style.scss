@@ -398,6 +398,9 @@ main {
 }
 
 .penutup {
+  @media screen and (max-width:766px) {
+    margin: 0 8px;
+  }
   .left-side {
     display: inline-block;
     width: 45%;
@@ -418,4 +421,25 @@ main {
     width: 50%;
     margin-left: 8px;
   }
+}
+
+.hehe {
+  &::before {
+    background-color: rgb(70 185 108 / 60%);
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+  position: relative;
+  width: fit-content;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  
 }
