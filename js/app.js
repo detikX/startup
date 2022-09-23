@@ -30,6 +30,66 @@ $(".to-up").click(()=>{
 
 
 
+$.ajax({
+  url: "js/data.json",
+  type: "GET",
+  success: (repsonse)=>{
+    // console.log(repsonse);
+    var a;
+    for(a=0; a<repsonse.length; a++) {
+      var nama = repsonse[a].nama;
+      var img = repsonse[a].img;
+      var img_mobile = repsonse[a].img_mobile;
+      var situs = repsonse[a].situs;
+      var category = repsonse[a].category;
+      var tahun = repsonse[a].tahun;
+      var desc = repsonse[a].desc;
+
+      $(".horizontal-container").append(`
+        <section class="containerx">
+          <div class="list">
+           
+            <div class="containerx__img mt-3">
+              <img src="${img}" alt="${nama}" title="${nama}" class="isdesktop">
+              <img src="${img_mobile}" alt="${nama}" title="${nama}" class="ismobile">
+            </div>
+            <div class="font-bold font-stdbig text-center">
+              <a href="${situs}" target="_blank" class="color-black">
+                ${nama}
+              </a>
+            </div>
+            <h2 class="text-center font-stdbig my-2 font-bold">${tahun}</h2>
+            <div class="wrap-detik mt-3">
+              <p>${desc}</p>
+            </div>
+          </div>
+        </section>
+      `)
+    }
+
+          // Horizontal scroll
+      gsap.registerPlugin(ScrollTrigger)
+
+      const container = document.querySelector(".horizontal-container");
+
+      gsap.to(container, {
+        x: () => -((container.scrollWidth) - document.documentElement.clientWidth) + "px",
+        ease: "none",
+        scrollTrigger: {
+          trigger: container,
+          invalidateOnRefresh: true,
+          pin: true,
+          markers: true,
+          scrub: 1,
+          // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
+          end: () => "+=" + (((container.offsetWidth - innerWidth) ))
+        }
+      })
+
+      console.log(container.scrollWidth);
+  }
+})
+
 
 // Skew
 let proxy = { skew: 0 },
@@ -54,22 +114,5 @@ ScrollTrigger.create({
 gsap.set("#skew", {transformOrigin: "left center", force3D: true});
 
 
-// Horizontal scroll
-gsap.registerPlugin(ScrollTrigger)
 
-const container = document.querySelector(".horizontal-container");
-
-gsap.to(container, {
-  x: () => -(((container.scrollWidth)/1.98) - document.documentElement.clientWidth) + "px",
-  ease: "none",
-  scrollTrigger: {
-    trigger: container,
-    invalidateOnRefresh: true,
-    pin: true,
-    markers: false,
-    scrub: 1,
-    // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
-    end: () => "+=" + (((container.offsetWidth - innerWidth) / 2))
-  }
-})
 

@@ -62,6 +62,7 @@ p {
       place-items: center;
       width: 100vw;
       height: 100vh;
+      padding: 0;
       &__img {
         width: fit-content;
         height: auto;
@@ -75,13 +76,17 @@ p {
   }
   
   .list {
-      font-size: 80px;
+      // font-size: 80px;
       height: 100vh;
-      width: 100vw;
+      width: 80vw;
       // display: grid;
       // justify-content: center;
       // align-items: center;
       background: #f4faff;
+      @media screen and(max-width:766px) {
+        width: 75vw;
+        height: 75vh;
+      }
       // outline: 1px solid red;
       //background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%,transparent 4%, transparent 100%),radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, #f4faff,#f4faff);
       .wrap-detik {
@@ -242,20 +247,39 @@ p {
     background: #f4faff;
     padding: 32px;
     margin: 42px auto;
+    position: relative;
+    z-index: 23;
   }
   
   p {
     font-size: 22px;
   // color: white;
-  position: relative;
+   position: relative;
   // line-height: 20px;
+  @media screen and (max-width:766px) {
+    font-size: 18px;
+  }
   }
 
+  &__help2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 420px;
+    height: auto;
+    animation:jumpTwo 4s infinite linear;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   &__help {
     position: absolute;
     left: 0;
     bottom: 0;
     animation:jumpTwo 5s infinite linear;
+    z-index: 31;
     @media screen and (max-width:766px) {
       width: 120px;
       height: 120px;
