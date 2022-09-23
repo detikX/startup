@@ -60,7 +60,7 @@ gsap.registerPlugin(ScrollTrigger)
 const container = document.querySelector(".horizontal-container");
 
 gsap.to(container, {
-  x: () => -(((container.scrollWidth)/2) - document.documentElement.clientWidth) + "px",
+  x: () => -(((container.scrollWidth)/1.95) - document.documentElement.clientWidth) + "px",
   ease: "none",
   scrollTrigger: {
     trigger: container,
@@ -69,7 +69,7 @@ gsap.to(container, {
     markers: true,
     scrub: 1,
     // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
-    end: () => "+=" + (((container.offsetWidth - innerWidth) / 4))
+    end: () => "+=" + (((container.offsetWidth - innerWidth) / 2))
   }
 })
 

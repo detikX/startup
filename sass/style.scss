@@ -228,8 +228,13 @@ p {
 }
 .paragraph {
   // padding: 32px 0;
-  height: 80vh;
-  // background: #f4faff;
+  min-height: 80vh;
+  .blue-soft {
+    background: #f4faff;
+    padding: 32px;
+    margin: 42px auto;
+  }
+  
   p {
     font-size: 22px;
   // color: white;

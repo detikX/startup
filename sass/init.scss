@@ -1,5 +1,14 @@
 $max: 766px;
 
+@font-face {
+  font-family: "Recoleta";
+  src: url('Recoleta-Medium.woff2');
+  src: local('Recoleta-Medium.woff2');
+  src: url('Recoleta-Medium.woff2') format('woff2');
+  // src: url('bingo.otf') format('opentype');
+}
+  
+
 main,
 body {
   // font-family: "Aleo", sans-serif;
@@ -24,12 +33,12 @@ th,
 h2,
 h3 {
   // font-family: "Aleo", sans-serif;
-  font-family: "Noticia Text";
+  font-family: "Recoleta";
   // color: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6, .body_text blockquote.sisip {
-  font-family: 'Noticia Text' !important;
+  font-family: 'Recoleta' !important;
 }
 
 main {
@@ -66,7 +75,7 @@ main {
 .font {
   &-bold {
     // font-weight: bold;
-    font-family: "Noticia Text", serif;
+    font-family: "Recoleta", serif;
     font-weight: 700;
     // font-family: "Bebas Neue", serif;
   }
