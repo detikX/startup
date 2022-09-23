@@ -81,11 +81,18 @@ p {
       // display: grid;
       // justify-content: center;
       // align-items: center;
+      background: #f4faff;
       // outline: 1px solid red;
-      background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%,transparent 4%, transparent 100%),radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, #f4faff,#f4faff);
+      //background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%,transparent 4%, transparent 100%),radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, #f4faff,#f4faff);
       .wrap-detik {
         @media screen and (max-width:766px) {
           padding: 8px 16px;
+        }
+      }
+      p {
+        font-size: 24px;
+        @media screen and (max-width:766px) {
+          font-size: 18px;
         }
       }
   }
@@ -230,6 +237,7 @@ p {
 .paragraph {
   // padding: 32px 0;
   min-height: 80vh;
+  position: relative;
   .blue-soft {
     background: #f4faff;
     padding: 32px;
@@ -242,7 +250,49 @@ p {
   position: relative;
   // line-height: 20px;
   }
+
+  &__help {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation:jumpTwo 5s infinite linear;
+    @media screen and (max-width:766px) {
+      width: 120px;
+      height: 120px;
+      bottom: -52px;
+    }
+    img {
+      @media screen and (max-width:766px) {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @keyframes jumpTwo {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+
+    40% {
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+}
   
+}
+
+.penutup {
+  p {
+    font-size: 21px;
+  }
 }
 
 .to-up {
@@ -345,4 +395,24 @@ main {
 
 .footer {
   z-index: 991 !important;
+}
+
+.penutup {
+  .left-side {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    h3 {
+      font-size: 48px;
+    }
+    .color-pink {
+      color: #ff2759 !important;
+      text-decoration: underline;
+    }
+  }
+  .right-side {
+    display: inline-block;
+    width: 50%;
+    margin-left: 8px;
+  }
 }
