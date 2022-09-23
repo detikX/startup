@@ -53,12 +53,12 @@ $.ajax({
               <img src="${img}" alt="${nama}" title="${nama}" class="isdesktop">
               <img src="${img_mobile}" alt="${nama}" title="${nama}" class="ismobile">
             </div>
-            <div class="font-bold font-stdbig text-center">
+            <div class="text-center mt-3">
               <a href="${situs}" target="_blank" class="color-black">
-                ${nama}
+                <h2 class="font-bold font-stdbig text-center">${nama}</h2>
               </a>
             </div>
-            <h2 class="text-center font-stdbig my-2 font-bold">${tahun}</h2>
+            <div class="text-center font-stdbig my-1 font-bold tahuns">${tahun}</div>
             <div class="wrap-detik mt-3">
               <p>${desc}</p>
             </div>
