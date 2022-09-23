@@ -317,6 +317,9 @@ p {
 .penutup {
   .wrap-detik {
     width: 790px;
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
   }
   p {
     font-size: 21px;
