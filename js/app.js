@@ -44,7 +44,10 @@ $.ajax({
       var category = repsonse[a].category;
       var tahun = repsonse[a].tahun;
       var desc = repsonse[a].desc;
-
+      {/* <div class="hehe haha">
+                <small>Bisa di klik</small>
+                <img src="img/up-arrow.png" alt="">
+              </div> */}
       $(".horizontal-container").append(`
         <section class="containerx">
           <div class="list">
@@ -53,10 +56,11 @@ $.ajax({
               <img src="${img}" alt="${nama}" title="${nama}" class="isdesktop">
               <img src="${img_mobile}" alt="${nama}" title="${nama}" class="ismobile">
             </div>
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 position-relative">
               <a href="${situs}" target="_blank" class="color-black">
                 <h2 class="font-bold font-stdbig text-center">${nama}</h2>
               </a>
+              
             </div>
             <div class="text-center font-stdbig my-1 font-bold tahuns">${tahun}</div>
             <div class="wrap-detik mt-3">

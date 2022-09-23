@@ -332,7 +332,7 @@ p {
 }
 
 .credit {
-  border-top: 5px solid #fbcc56;
+  border-top: 5px solid #ff2759;
   // background: #c3c4c5;
   // background: #3a2c11;
   // background: #30250e;
@@ -478,4 +478,18 @@ main {
 
 .tahuns {
   color: #5486df;
+}
+
+.haha {
+  margin: 0 auto;
+  &::before {
+    z-index: 2;
+  }
+  img {
+    // transform: rotate(180deg);
+  }
+  small, img {
+    position: relative;
+    z-index: 66;
+  }
 }
