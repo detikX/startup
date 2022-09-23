@@ -53,8 +53,10 @@ $.ajax({
           <div class="list">
            
             <div class="containerx__img mt-3">
-              <img src="${img}" alt="${nama}" title="${nama}" class="isdesktop">
-              <img src="${img_mobile}" alt="${nama}" title="${nama}" class="ismobile">
+              <picture>
+                <source media="(max-width:766px)" srcset="${img_mobile}">
+                <img src="${img}" alt="${nama}" title="${nama}">
+              </picture>
             </div>
             <div class="text-center mt-3 position-relative">
               <a href="${situs}" target="_blank" class="color-black">
