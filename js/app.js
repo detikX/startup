@@ -79,7 +79,7 @@ $.ajax({
           trigger: container,
           invalidateOnRefresh: true,
           pin: true,
-          markers: true,
+          markers: false,
           scrub: 1,
           // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
           end: () => "+=" + (((container.offsetWidth - innerWidth) ))
