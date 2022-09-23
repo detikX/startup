@@ -404,6 +404,9 @@ main {
     vertical-align: top;
     h3 {
       font-size: 48px;
+      @media screen and (max-width:766px) {
+        font-size: 40px;
+      }
     }
     .color-pink {
       color: #ff2759 !important;
