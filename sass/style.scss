@@ -78,8 +78,8 @@ p {
   
   .list {
       // font-size: 80px;
-      height: 100vh;
-      width: 80vw;
+      height: 75vh;
+      width: 70vw;
       // display: grid;
       // justify-content: center;
       // align-items: center;
@@ -315,6 +315,9 @@ p {
 }
 
 .penutup {
+  .wrap-detik {
+    width: 790px;
+  }
   p {
     font-size: 21px;
   }
