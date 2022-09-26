@@ -574,6 +574,9 @@ main {
   padding: 32px 24px;
   // border-radius: 16px;
   margin: 24px 0;
+  @media screen and (max-width:766px) {
+    background: rgba($color: white, $alpha: .9);
+  }
 }
 
 .rotate {
