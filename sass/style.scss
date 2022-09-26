@@ -8,7 +8,7 @@ body {
   background: transparent;
 }
 main {
-  background: transparent;
+  background: #ecf0f3;
   overflow-x: hidden;
 }
 
@@ -118,6 +118,15 @@ p {
   }
 }
 
+.godaan {
+  .wrap-detik {
+    width: 720px;
+    @media screen and (max-width:766px) {
+      width: auto;
+    }
+  }
+}
+
 .banner {
   height: 100vh;
   position: relative;
@@ -146,7 +155,7 @@ p {
       transform: initial;
       left: initial;
       width: 100%;
-      top: 13%;
+      top: 20%;
     }
    
     h2 {
@@ -161,7 +170,7 @@ p {
       @media screen and (min-width:1440px) {
         width: 62vw;  
         text-align: center;
-        font-size: 85px;
+        font-size: 75px;
       }
       @media screen and (max-width:766px) {
         line-height: 50px;
@@ -240,23 +249,51 @@ p {
     }
   }
 }
+
+.blue-soft {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  padding: 32px;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  margin: 42px auto;
+  position: relative;
+  z-index: 23;
+}
+
+
 .paragraph {
   // padding: 32px 0;
   min-height: 80vh;
   position: relative;
-  .blue-soft {
-    background: #f4faff;
-    padding: 32px;
-    margin: 42px auto;
-    position: relative;
-    z-index: 23;
+  
+  .categories {
+    display: block;
+    width: 800px;
+    margin: 0 auto 16px;
+    .mendatar {
+      display: inline-block;
+      width: 30%;
+      height: 98px;
+      padding: 16px;
+      font-size: 22px;
+      text-align: center;
+      cursor: pointer;
+      vertical-align: middle;
+      margin: 8px;
+      transition: .3s;
+      &:hover {
+        background: white;
+      }
+    }
   }
   
   p {
-    font-size: 22px;
+    font-size: 18px;
   // color: white;
    position: relative;
   // line-height: 20px;
+  @media screen and (min-width:1440px) {
+    font-size: 22px;
+  }
   @media screen and (max-width:766px) {
     font-size: 18px;
   }
@@ -314,17 +351,6 @@ p {
   
 }
 
-.penutup {
-  .wrap-detik {
-    width: 790px;
-    @media screen and (max-width:766px) {
-      width: 100%;
-    }
-  }
-  p {
-    font-size: 21px;
-  }
-}
 
 .to-up {
   cursor: pointer;
@@ -429,14 +455,21 @@ main {
   z-index: 991 !important;
 }
 
-.penutup {
+.penutup,.cool {
+  position: relative;
+  z-index: 100;
+  min-height: 90vh;
   @media screen and (max-width:766px) {
     margin: 0 8px;
   }
   .left-side {
     display: inline-block;
     width: 45%;
+    margin-right: 16px;
     vertical-align: top;
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
     h3 {
       font-size: 48px;
       @media screen and (max-width:766px) {
@@ -445,36 +478,71 @@ main {
     }
     .color-pink {
       color: #ff2759 !important;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
   .right-side {
     display: inline-block;
     width: 50%;
     margin-left: 8px;
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
   }
 }
 
-.hehe {
-  &::before {
-    background-color: rgb(70 185 108 / 60%);
-    content: "";
-    position: absolute;
-    width: calc(100% + 4px);
-    height: 60%;
-    left: -2px;
-    bottom: 0;
-    z-index: -1;
-    transform: rotate(-2deg);
+
+.faq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .hehe {
+    &::before {
+      background-color: rgb(70 185 108 / 60%);
+      content: "";
+      position: absolute;
+      width: calc(100% + 4px);
+      height: 60%;
+      left: -2px;
+      bottom: 0;
+      z-index: -1;
+      transform: rotate(-2deg);
+    }
+    position: relative;
+    width: fit-content;
+    float: left;
+    z-index: 6;
+    cursor: pointer;
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
-  position: relative;
-  width: fit-content;
-  img {
-    width: 30px;
-    height: 30px;
+  .question {
+    margin-bottom: 24px;
   }
-  
+  .arrow {
+    float: right;
+    cursor: pointer;
+    &__down {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto;
+      transition: .3s;
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .clear {
+    clear: both;
+  }
 }
+
 
 .tahuns {
   color: #5486df;
@@ -492,4 +560,26 @@ main {
     position: relative;
     z-index: 66;
   }
+}
+
+.ukuran {
+  position: sticky;
+  top: 52px;
+}
+
+.bg-whitex {
+  background: rgba($color: white, $alpha: .7);
+  z-index: 99;
+  position: relative;
+  padding: 32px 24px;
+  // border-radius: 16px;
+  margin: 24px 0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.lalala {
+  transition: .3s;
 }

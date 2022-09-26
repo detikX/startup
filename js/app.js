@@ -14,9 +14,32 @@ $(() => {
 
   }
 
+
 });
 
+var action = 'click';
+$(document).on(action, 'li.question', function() {
+    $(this).next().slideToggle(200)
+        .siblings("li.answer").slideUp();
 
+    var img = $(this).find('.arrow__down');
+
+    $('.arrow__down').not(img).removeClass('rotate').css("transition", "all .2s ease")
+    img.toggleClass('rotate')
+})
+
+
+
+
+$(".question").click(()=>{
+  if ($(this).find(".klik-detail").text() === 'Klik Detail') {
+    $(this).text('Tutup');
+  } else {
+      $(this).text('Klik Detail');        
+  }
+
+//  return false; 
+})
 $(".scroll-down").click(() => {
   $('html, body').animate({
     scrollTop: $("#first").offset().top
