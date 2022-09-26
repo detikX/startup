@@ -78,7 +78,7 @@ p {
   
   .list {
       // font-size: 80px;
-      height: 75vh;
+      height: 100vh;
       width: 70vw;
       // display: grid;
       // justify-content: center;
@@ -269,6 +269,9 @@ p {
     display: block;
     width: 800px;
     margin: 0 auto 16px;
+    @media screen and (max-width:766px) {
+      width: 320px;
+    }
     .mendatar {
       display: inline-block;
       width: 30%;
@@ -280,6 +283,9 @@ p {
       vertical-align: middle;
       margin: 8px;
       transition: .3s;
+      @media screen and (max-width:766px) {
+        width: auto;
+      }
       &:hover {
         background: white;
       }
@@ -476,10 +482,7 @@ main {
         font-size: 40px;
       }
     }
-    .color-pink {
-      color: #ff2759 !important;
-      // text-decoration: underline;
-    }
+    
   }
   .right-side {
     display: inline-block;
@@ -489,6 +492,10 @@ main {
       width: 100%;
     }
   }
+}
+.color-pink {
+  color: #ff2759 !important;
+  // text-decoration: underline;
 }
 
 
