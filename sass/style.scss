@@ -677,7 +677,7 @@ main {
   margin-left: 16px;
   position: relative;
   &__detail {
-    background: radial-gradient(circle, #ccc, #fff);
+    background: radial-gradient(circle, rgb(211, 211, 211), #fff);
     padding: 8px;
     margin: 8px 0;
     transform: rotate(3deg);
