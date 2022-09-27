@@ -696,6 +696,9 @@ main {
     transform: rotate(3deg);
     transition: .3s;
     position: relative;
+    @media screen and (max-width:766px) {
+      margin: 8px 0 24px;
+    }
     &.leftx {
       transform: rotate(1deg);
     }
