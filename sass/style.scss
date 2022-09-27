@@ -675,12 +675,31 @@ main {
   display: inline-block;
   vertical-align: middle;
   margin-left: 16px;
+  position: relative;
   &__detail {
-    background: white;
+    background: radial-gradient(circle, #ccc, #fff);
     padding: 8px;
     margin: 8px 0;
     transform: rotate(3deg);
     transition: .3s;
+    position: relative;
+    &.leftx {
+      transform: rotate(1deg);
+    }
+    &--bg {
+      // content: '';
+      position: absolute;
+      right: -16px;
+      top: -16px;
+      width: 50px;
+      height: 50px;
+      // background-image: url('../img/pin.png');
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
     &:hover {
       transform: rotate(0deg);
     }
@@ -708,4 +727,10 @@ main {
     }
   }
 
+}
+
+.perusahaan-layoff {
+  h3 {
+    font-size: 36px;
+  }
 }
