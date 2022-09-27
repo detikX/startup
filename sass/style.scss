@@ -84,7 +84,7 @@ p {
       // display: grid;
       // justify-content: center;
       // align-items: center;
-      background: #f4faff;
+      // background: #f4faff;
       @media screen and(max-width:766px) {
         width: 75vw;
         height: 90vh;
@@ -765,6 +765,7 @@ main {
 
 .perusahaan-layoff {
   overflow-x: hidden;
+  padding: 42px 0;
   h3 {
     font-size: 36px;
   }

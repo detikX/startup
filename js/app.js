@@ -112,7 +112,7 @@ $.ajax({
               </div> */}
       $(".horizontal-container").append(`
         <section class="containerx">
-          <div class="list">
+          <div class="list blue-soft">
            
             <div class="containerx__img mt-3">
               <picture>
