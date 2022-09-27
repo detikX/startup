@@ -51,7 +51,23 @@ $(".to-up").click(()=>{
   $("html, body").animate({ scrollTop: 0 });
 })
 
+$("#one").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#show-one").offset().top},
+      'slow');
+});
 
+$("#two").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#show-two").offset().top},
+      'slow');
+});
+
+$("#three").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#show-three").offset().top},
+      'slow');
+});
 
 $.ajax({
   url: "js/data.json",
