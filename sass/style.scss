@@ -6,6 +6,7 @@ $orange: #f7941f;
 @import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
 body {
   background: transparent;
+  overflow-x: hidden;
 }
 main {
   background: #ecf0f3;
@@ -120,6 +121,10 @@ p {
 }
 
 .godaan {
+  // overflow: hidden;
+  @media screen and (max-width:766px) {
+    overflow-x: hidden;
+  }
   .wrap-detik {
     width: 720px;
     @media screen and (max-width:766px) {
@@ -744,7 +749,7 @@ main {
   }
 
 }
-@keyframes MoveUpDown {
+@keyframes MoveUpDowns {
   0%, 100% {
     top: 30px;
   }
@@ -758,7 +763,7 @@ main {
   height: auto;
   position: sticky;
   top: 30px;
-  animation: MoveUpDown 1.5s linear infinite;
+  animation: MoveUpDowns 1.5s linear infinite;
   img {
     width: 100%;
     height: 100%;
@@ -817,12 +822,23 @@ main {
   cursor: pointer;
 }
 
+.all-kuda
+.kuda {
+  width: 30%;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 .keterangan {
   position: fixed;
   right: 16px;
   z-index: 9989;
   top: 51px;
-  // display: none;
+  display: none;
   width: 100px;
   font-size: 13px;
   background: white;
