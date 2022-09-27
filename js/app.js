@@ -47,6 +47,11 @@ $(".scroll-down").click(() => {
 
 })
 
+$(".scroll-to-top").click(()=>{
+  $('html, body').animate({scrollTop: '0px'}, 300);
+})
+
+
 $(".to-up").click(()=>{
   $("html, body").animate({ scrollTop: 0 });
 })

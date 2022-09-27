@@ -313,6 +313,9 @@ p {
     width: 420px;
     height: auto;
     animation:jumpTwo 4s infinite linear;
+    @media screen and (max-width:766px) {
+      width: 320px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -660,10 +663,15 @@ main {
   }
   .titles {
     display: inline-block;
-    
+    position: sticky;
+    top: 32px;
     margin-left: 8px;
     h3 {
-      font-size: 48px;
+      font-size: 44px;
+      width: 360px;
+      @media screen and (max-width:766px) {
+        width: auto;
+      }
     }
     @media screen and (max-width:766px) {
       order: 1;
@@ -674,9 +682,13 @@ main {
 
 .jobs {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-left: 16px;
   position: relative;
+  width: 360px;
+  @media screen and (max-width:766px) {
+    width: auto;
+  }
   &__detail {
     background: radial-gradient(circle, rgb(211, 211, 211), #fff);
     padding: 8px;
@@ -729,8 +741,30 @@ main {
   }
 
 }
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 30px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+.ilustrasi {
+  width: 300px;
+  display: inline-block;
+  height: auto;
+  position: sticky;
+  top: 30px;
+  animation: MoveUpDown 1.5s linear infinite;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
 
 .perusahaan-layoff {
+  overflow-x: hidden;
   h3 {
     font-size: 36px;
   }
@@ -768,4 +802,21 @@ main {
   font-weight: 700;
   padding: 2px;
   text-align: center;
+}
+
+.scroll-to-top {
+  width: 260px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.keterangan {
+  position: fixed;
+  right: 16px;
+  z-index: 9989;
+  top: 51px;
+  width: 100px;
+  font-size: 13px;
+  background: white;
+  padding: 5px;
 }
