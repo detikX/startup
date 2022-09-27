@@ -778,6 +778,9 @@ main {
     font-size: 20px;
     z-index: 9989;
     position: sticky;
+    @media screen and (max-width:766px) {
+      top: 8px;
+    }
   h1 {
     color: #333;
     font-size: 28px;
