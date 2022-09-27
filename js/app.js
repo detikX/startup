@@ -56,21 +56,36 @@ $(".to-up").click(()=>{
   $("html, body").animate({ scrollTop: 0 });
 })
 
-$("#one").click(function() {
+$("#first_").click(function() {
+  $(".load-show-one").fadeIn();
+  $(this).hide();
   $('html,body').animate({
-      scrollTop: $("#show-one").offset().top},
+      scrollTop: $(".load-show-one").offset().top -40},
       'slow');
 });
 
-$("#two").click(function() {
+$("#two_").click(function() {
+  $(".load-show-two").fadeIn();
+  $(this).hide();
   $('html,body').animate({
-      scrollTop: $("#show-two").offset().top},
+      scrollTop: $(".load-show-two").offset().top -40},
       'slow');
 });
 
-$("#three").click(function() {
+$("#three_").click(function() {
+  $(".load-show-three").fadeIn();
+  $(this).hide();
   $('html,body').animate({
-      scrollTop: $("#show-three").offset().top},
+      scrollTop: $(".load-show-three").offset().top -40},
+      'slow');
+});
+
+$("#four_").click(function() {
+  // $(".horizontal-container").css('filter','blur(0)');
+  $(".load-show-four").css('opacity','1');
+  $(this).hide();
+  $('html,body').animate({
+      scrollTop: $(".load-show-four").offset().top -40},
       'slow');
 });
 
@@ -147,14 +162,14 @@ $.ajax({
           trigger: container,
           invalidateOnRefresh: true,
           pin: true,
-          markers: false,
+          markers: true,
           scrub: 1,
           // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
           end: () => "+=" + (((container.offsetWidth - innerWidth) ))
         }
       })
 
-      console.log(container.scrollWidth);
+      // console.log(container.scrollWidth);
   }
 })
 

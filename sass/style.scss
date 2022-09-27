@@ -821,17 +821,43 @@ main {
   margin: 0 auto;
   cursor: pointer;
 }
-
-.all-kuda
-.kuda {
-  width: 30%;
-  height: auto;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.load-show-four {
+  // opacity: .1;
+  // pointer-events: none;
+}
+.all-kuda {
+  position: relative;
+  height: 520px;
+  top: -32px;
+  left: -250px;
+  .kuda {
+    width: 60%;
+    padding: 16px;
+    height: auto;
+    margin: 8px 0;
+    background: #e6e6e6;
+    border-radius: 16px;
+    position: absolute;
+    &.one {
+      left: -42px;
+      bottom: 0;
+    }
+    &.two {
+      left: 152px;
+      bottom: 54px;
+    }
+    &.three {
+      left: 350px;
+      bottom: 100px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
+
 
 .keterangan {
   position: fixed;
@@ -846,4 +872,13 @@ main {
   @media screen and (max-width:766px) {
     display: none;
   }
+}
+
+.btn-lanjut {
+  border: 1px solid transparent;
+  background: #ccc;
+  padding: 8px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
