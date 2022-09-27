@@ -69,6 +69,24 @@ $("#three").click(function() {
       'slow');
 });
 
+
+document.addEventListener("DOMContentLoaded", function(){
+  const progressbarinner = document.querySelector('.progress-bars-inner');
+
+  window.addEventListener('scroll', function(){
+    let h = document.documentElement;
+    let st = h.scrollTop || this.document.body.scrollTop;
+    let sh = h.scrollHeight || document.body.scrollHeight;
+
+    let percent = st/ (sh - h.clientHeight) * 100;
+    let roundedPercent = Math.round(percent);
+
+    progressbarinner.style.width = roundedPercent + "%";
+    progressbarinner.innerText = roundedPercent + "%"
+  })
+
+})
+
 $.ajax({
   url: "js/data.json",
   type: "GET",
