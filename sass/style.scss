@@ -169,11 +169,11 @@ p {
 
   &__titlex {
     position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 65%;
+    right: 5%;
+    bottom: 8%;
+    color: #fff;
+    width: 40%;
+    text-align: right;
     @media screen and (min-width:1440px) {
       top: 15%;
       width: 62%;
@@ -528,6 +528,7 @@ main {
 .color-pink {
   color: #ff2759 !important;
   // text-decoration: underline;
+  font-weight: bold;
 }
 
 
@@ -607,7 +608,7 @@ main {
 }
 
 .bg-whitex {
-  background: rgb(204 236 255 / 51%);
+  background: rgb(218 234 243 / 51%);
   z-index: 99;
   position: relative;
   padding: 32px 24px;
@@ -840,13 +841,33 @@ main {
     font-size: 28px;
   }
 }
-
+.img-rame {
+  position: absolute;
+  left: -24px;
+  top: 150px;
+  width: 390px;
+  opacity: .4;
+  animation: MoveUpDowns 4.7s linear infinite;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  @media screen and (max-width:766px) {
+    width: auto;
+  }
+}
 .btn-link {
   margin: 0 auto 16px;
   display: block;
   text-align: center;
   background: #d1d0d0;
+  font-weight: bold;
   color: black !important;
+}
+
+.answer.blue-soft {
+  padding: 8px !important;
 }
 
 .image-center {
@@ -903,18 +924,19 @@ main {
 }
 .all-kuda {
   position: relative;
-  height: 520px;
-  top: -32px;
+  height: 60vh;
+  top: -64px;
+  width: 512px;
   left: -250px;
   @media screen and (max-width:766px) {
     display: none;
   }
   .kuda {
-    width: 60%;
+    width: 100%;
     padding: 16px;
     height: auto;
     margin: 8px 0;
-    background: #e6e6e6;
+    // background: #e6e6e6;
     border-radius: 16px;
     position: absolute;
     h4 {
