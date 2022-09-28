@@ -495,6 +495,8 @@ main {
     vertical-align: top;
     @media screen and (max-width:766px) {
       width: 100%;
+      position: initial;
+      margin-bottom: 24px;
     }
     h3 {
       font-size: 48px;
@@ -682,6 +684,9 @@ main {
     position: sticky;
     top: 32px;
     margin-left: 8px;
+    @media screen and (max-width:766px) {
+      position: initial;
+    }
     h3 {
       font-size: 44px;
       width: 360px;
@@ -850,6 +855,9 @@ main {
   height: 520px;
   top: -32px;
   left: -250px;
+  @media screen and (max-width:766px) {
+    display: none;
+  }
   .kuda {
     width: 60%;
     padding: 16px;
