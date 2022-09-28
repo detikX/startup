@@ -82,7 +82,8 @@ $("#three_").click(function() {
 
 $("#four_").click(function() {
   // $(".horizontal-container").css('filter','blur(0)');
-  $(".load-show-four").css('opacity','1');
+  // $(".load-show-four").css('opacity','1');
+  $(".load-show-four").show();
   $(this).hide();
   $('html,body').animate({
       scrollTop: $(".load-show-four").offset().top -40},
@@ -164,6 +165,7 @@ $.ajax({
           pin: true,
           markers: true,
           scrub: 1,
+          start:"top 20%",
           // end: () => "+=" + ((container.offsetWidth - innerWidth) / 2)
           end: () => "+=" + (((container.offsetWidth - innerWidth) ))
         }
