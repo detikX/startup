@@ -769,6 +769,7 @@ main {
     }
   }
   &__img {
+    display: none;
     @media screen and (max-width:766px) {
       display: block;
     }
