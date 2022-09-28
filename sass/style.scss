@@ -843,6 +843,9 @@ main {
     margin: 0 auto;
     display: block;
     text-align: center;
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
     img {
       width: 100%;
       height: 100%;
