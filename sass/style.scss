@@ -994,7 +994,20 @@ main {
   color: white;
   display: block;
   text-align: center;
+  top: 0;
+  position: relative;
+  animation: MoveUpDownsx .3s linear infinite;
   &:hover {
     color: silver;
+    animation: initial;
+  }
+}
+
+@keyframes MoveUpDownsx {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 5px;
   }
 }
