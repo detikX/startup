@@ -5,7 +5,7 @@ $orange: #f7941f;
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
 body {
-  background: transparent;
+  background: #ecf0f3;
   overflow-x: hidden;
 }
 main {
@@ -607,14 +607,14 @@ main {
 }
 
 .bg-whitex {
-  background: rgba($color: white, $alpha: .7);
+  background: rgb(204 236 255 / 51%);
   z-index: 99;
   position: relative;
   padding: 32px 24px;
   // border-radius: 16px;
   margin: 24px 0;
   @media screen and (max-width:766px) {
-    background: rgba($color: white, $alpha: .9);
+    background: rgb(230 246 255 / 91%);
   }
 }
 
