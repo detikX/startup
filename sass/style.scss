@@ -538,14 +538,14 @@ main {
   padding: 0;
   .hehe {
     &::before {
-      background-color: rgb(70 185 108 / 60%);
+      background-color: rgb(70 185 108 / 80%);
       content: "";
       position: absolute;
       width: calc(100% + 4px);
       height: 60%;
       left: -2px;
       bottom: 0;
-      z-index: -1;
+      z-index: 5;
       transform: rotate(-2deg);
     }
     position: relative;
@@ -553,9 +553,18 @@ main {
     float: left;
     z-index: 6;
     cursor: pointer;
+    h3 {
+      position: relative;
+      z-index: 9;
+    }
     img {
-      width: 30px;
-      height: 30px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      right: -36px;
+      top: -24px;
+      z-index: -1;
     }
   }
   .question {
@@ -676,7 +685,7 @@ main {
     padding: 0;
     margin: 0;
     li {
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 8px;
     }
   }
@@ -724,7 +733,7 @@ main {
   }
   &__detail {
     background: radial-gradient(circle, rgb(211, 211, 211), #fff);
-    padding: 8px;
+    padding: 8px 16px;
     margin: 8px 0;
     transform: rotate(3deg);
     transition: .3s;
@@ -939,6 +948,8 @@ main {
     // background: #e6e6e6;
     border-radius: 16px;
     position: absolute;
+    transform: scale(1);
+    animation: Zooming 2s linear infinite;
     h4 {
       color: #5c5c5c;
       font-weight: 700;
@@ -1031,5 +1042,14 @@ main {
   }
   50% {
     top: 5px;
+  }
+}
+
+@keyframes Zooming {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
 }
