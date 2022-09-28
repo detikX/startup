@@ -641,8 +641,8 @@ main {
 }
 
 .ukuran {
-  position: sticky;
-  top: 52px;
+  position: relative;
+  // top: 52px;
 }
 
 .bg-whitex {
@@ -1019,7 +1019,7 @@ main {
 }
 .all-kuda {
   position: relative;
-  height: 60vh;
+  height: 5vh;
   top: -64px;
   width: 512px;
   left: -250px;
