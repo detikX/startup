@@ -420,6 +420,7 @@ p {
     display: block;
     width: 50%;
     margin: 0 auto 4px;
+    // position: relative;
 
     @media screen and (max-width:766px) {
       width: 100%;
@@ -700,6 +701,18 @@ main {
 
 .wrapping {
   display: block;
+  position: relative;
+  .img-salaryx {
+    // position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   ul {
     list-style-type: none;
     padding: 0;
