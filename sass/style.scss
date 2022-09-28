@@ -4,6 +4,14 @@ $primary: #fafafa;
 $orange: #f7941f;
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
+
+@font-face {
+    font-family: "Recoleta Med";
+    src: url('Recoleta-Medium.woff2');
+    src: local('Recoleta-Medium.woff2');
+    src: url('Recoleta-Medium.woff2') format('woff2');
+    // src: url('bingo.otf') format('opentype');
+  }
 body {
   background: #ecf0f3;
   overflow-x: hidden;
@@ -164,9 +172,9 @@ p {
   }
 
   @media screen and (max-width:766px) {
-    height: 100vh;
+    height: 60vh;
   }
-
+  
   &__titlex {
     position: absolute;
     right: 5%;
@@ -188,8 +196,13 @@ p {
     h2 {
       margin: 0;
       font-size: 62px;
+      // text-shadow: -2px -2px 0px #888,
+      //           4px 4px 0px #888,
+      //           7px 7px 0px #888;
       padding: 0;
-      color: white;
+      color: #ff2759;
+      font-weight: bold !important;
+      font-family: 'Recoleta Med' !important;
       span {
         font-size: inherit;
       }
@@ -205,10 +218,10 @@ p {
         width: 100%;
         // border: 1px solid;
       }
-      text-shadow: 0 0.1em 20px rgba(0, 0, 0, .8), 0.05em -0.03em 0 rgba(0, 0, 0, .8),
-        0.05em 0.005em 0 rgba(0, 0, 0, .8), 0em 0.08em 0 rgba(0, 0, 0, .8),
-        0.05em 0.08em 0 rgba(0, 0, 0, .8), 0px -0.03em 0 rgba(0, 0, 0, .8),
-        -0.03em -0.03em 0 rgba(0, 0, 0, .8), -0.03em 0.08em 0 rgba(0, 0, 0, .8), -0.03em 0 0 rgba(0, 0, 0, .8);
+      // text-shadow: 0 0.1em 20px rgba(0, 0, 0, .8), 0.05em -0.03em 0 rgba(0, 0, 0, .8),
+      //   0.05em 0.005em 0 rgba(0, 0, 0, .8), 0em 0.08em 0 rgba(0, 0, 0, .8),
+      //   0.05em 0.08em 0 rgba(0, 0, 0, .8), 0px -0.03em 0 rgba(0, 0, 0, .8),
+      //   -0.03em -0.03em 0 rgba(0, 0, 0, .8), -0.03em 0.08em 0 rgba(0, 0, 0, .8), -0.03em 0 0 rgba(0, 0, 0, .8);
       span {
         transform: scale(0.9);
         display: inline-block;
@@ -400,7 +413,7 @@ p {
   // background: #30250e;
   text-align: center;
   margin: 0 auto;
-  background: #f4faff;
+  // background: #f4faff;
   display: block;
 
   .wrapings {
@@ -643,12 +656,12 @@ main {
   &__list {
     display: inline-block;
     width: 30%;
-    margin: 2px auto;
+    margin: 8px;
     padding: 24px 0;
-    background: #e2e8ec;
+    // background: #e2e8ec;
     text-align: center;
     @media screen and (max-width:766px) {
-      width: 46%;
+      width: 44%;
     }
     .value {
       font-weight: bold;
@@ -857,6 +870,12 @@ main {
   width: 390px;
   opacity: .4;
   animation: MoveUpDowns 4.7s linear infinite;
+  &.twox {
+    left: initial;
+    width: 120px;
+    right: 100px;
+    animation: MoveUpDowns 3.7s linear infinite;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -987,8 +1006,11 @@ main {
       bottom: 0;
     }
     &.two {
-      left: 152px;
-      bottom: 54px;
+      left: 0;
+      bottom: initial;
+      top: -550px;
+      width: 200px;
+      animation: Zooming 2.5s linear infinite;
     }
     &.three {
       left: 350px;
