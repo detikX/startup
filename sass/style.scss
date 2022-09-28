@@ -201,7 +201,7 @@ p {
       //           4px 4px 0px #888,
       //           7px 7px 0px #888;
       padding: 0;
-      color: #00996c;
+      color: #ee1c24;
       font-weight: bold !important;
       font-family: 'Recoleta Med' !important;
       span {
@@ -710,6 +710,8 @@ main {
 .wrapping {
   display: block;
   position: relative;
+  margin: 0 auto;
+  text-align: center;
   .img-salaryx {
     // position: absolute;
     left: 0;
@@ -746,6 +748,8 @@ main {
   .titles {
     display: inline-block;
     position: sticky;
+    vertical-align: top;
+    text-align: left;
     top: 32px;
     margin-left: 8px;
     @media screen and (max-width:766px) {
@@ -829,12 +833,13 @@ main {
     }
   }
   &__img {
-    display: none;
+    // display: none;
     @media screen and (max-width:766px) {
       display: block;
     }
-    width: 100%;
+    width: 60%;
     height: 100%;
+    display: inline-block;
     img {
       width: 100%;
       height: 100%;
@@ -877,7 +882,7 @@ main {
 }
 .ilustrasi {
   width: 300px;
-  display: inline-block;
+  display: none;
   height: auto;
   position: sticky;
   top: 30px;
@@ -907,7 +912,7 @@ main {
 
 .ceki {
     top: 0;
-    background-color: #fba8bc;
+    background-color: #008f6b;
     padding: 4.5px;
     font-size: 20px;
     z-index: 9989;
@@ -1099,23 +1104,26 @@ main {
   }
 }
 
-.btn-lanjut {
-  border: 1px solid transparent !important;
-  background: linear-gradient(145deg, #ff2759, #b83957) !important;
-  padding: 8px !important;
-  // box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-  margin: 0 auto;
-  color: white;
-  display: block !important;
-  text-align: center !important;
-  top: 0;
-  position: relative;
-  animation: MoveUpDownsx .3s linear infinite;
-  &:hover {
-    color: silver;
-    animation: initial;
+main {
+  .btn-lanjut {
+    border: 1px solid transparent !important;
+    background: linear-gradient(145deg, #ff2759, #b83957) !important;
+    padding: 8px !important;
+    // box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    margin: 0 auto;
+    color: white;
+    display: block;
+    text-align: center !important;
+    top: 0;
+    position: relative;
+    animation: MoveUpDownsx .3s linear infinite;
+    &:hover {
+      color: silver;
+      animation: initial;
+    }
   }
 }
+
 
 @keyframes MoveUpDownsx {
   0%, 100% {
@@ -1136,6 +1144,6 @@ main {
 }
 
 .special-pink {
-  background: #00996c !important;
+  background: #ee1c24 !important;
   color: white !important;
 }
