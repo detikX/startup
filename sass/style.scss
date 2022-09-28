@@ -859,16 +859,33 @@ main {
     top: 100px;
   }
 }
+
+@keyframes MoveUpDownsz {
+  0%, 100% {
+    top: 30px;
+    @media screen and (max-width:766px) {
+      top: 0;
+    }
+  }
+  50% {
+    top: 80px;
+    @media screen and (max-width:766px) {
+      top: 10px;
+    }
+  }
+}
 .ilustrasi {
   width: 300px;
   display: inline-block;
   height: auto;
   position: sticky;
   top: 30px;
-  animation: MoveUpDowns 1.5s linear infinite;
+  animation: MoveUpDownsz 1.5s linear infinite;
   @media screen and (max-width:766px) {
     display: block;
+    // position: relative;
     margin: 0 auto;
+    top: 0;
     text-align: center;
   }
   img {
