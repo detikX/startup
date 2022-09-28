@@ -190,8 +190,8 @@ p {
     @media screen and (max-width:766px) {
       transform: initial;
       left: initial;
-      width: 100%;
-      top: 20%;
+      width: 85%;
+      top: 66px;
     }
    
     h2 {
@@ -214,8 +214,8 @@ p {
         font-size: 75px;
       }
       @media screen and (max-width:766px) {
-        line-height: 50px;
-        font-size: 42px;
+        line-height: 42px;
+        font-size: 43px;
         width: 100%;
         // border: 1px solid;
       }
@@ -1133,4 +1133,9 @@ main {
   50% {
     transform: scale(1.1);
   }
+}
+
+.special-pink {
+  background: #ff2759 !important;
+  color: white !important;
 }
