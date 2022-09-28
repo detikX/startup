@@ -137,9 +137,7 @@ $.ajax({
               </picture>
             </div>
             <div class="text-center mt-3 position-relative">
-              <a href="${situs}" target="_blank" class="color-black">
-                <h2 class="font-bold font-stdbig text-center">${nama}</h2>
-              </a>
+                <h2 class="font-bold font-stdbig text-center color-black">${nama}</h2>
               
             </div>
             <div class="text-center font-stdbig my-1 font-bold tahuns">${tahun}</div>
