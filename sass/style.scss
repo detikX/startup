@@ -415,7 +415,7 @@ p {
 }
 
 .credit {
-  border-top: 5px solid #ff2759;
+  border-top: 5px solid #008f6b !important;
   // background: #c3c4c5;
   // background: #3a2c11;
   // background: #30250e;
@@ -548,7 +548,7 @@ main {
   }
 }
 .color-pink {
-  color: #ff2759 !important;
+  color: #008f6b !important;
   // text-decoration: underline;
   font-weight: bold;
 }
@@ -1103,11 +1103,11 @@ main {
     display: none;
   }
 }
-
+// pink #ff2759
 main {
   .btn-lanjut {
     border: 1px solid transparent !important;
-    background: linear-gradient(145deg, #ff2759, #b83957) !important;
+    background: linear-gradient(145deg, #008f6b,#00d19d) !important;
     padding: 8px !important;
     // box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     margin: 0 auto;
