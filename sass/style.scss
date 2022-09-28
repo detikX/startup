@@ -297,6 +297,9 @@ p {
   margin: 42px auto;
   position: relative;
   z-index: 23;
+  @media screen and (max-width:766px) {
+    margin: 42px 8px;
+  }
 }
 
 
@@ -705,6 +708,9 @@ main {
   .img-salaryx {
     // position: absolute;
     left: 0;
+    @media screen and (max-width:766px) {
+      display: none;
+    }
     bottom: 0;
     width: 300px;
     img {
