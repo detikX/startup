@@ -183,8 +183,9 @@ p {
     width: 40%;
     text-align: right;
     @media screen and (min-width:1440px) {
-      top: 15%;
-      width: 62%;
+      top: initial;
+      width: 35%;
+      bottom: 5%;
     }
     @media screen and (max-width:766px) {
       transform: initial;
@@ -208,8 +209,8 @@ p {
       }
       
       @media screen and (min-width:1440px) {
-        width: 62vw;  
-        text-align: center;
+        width: 35vw;  
+        text-align: right;
         font-size: 75px;
       }
       @media screen and (max-width:766px) {
