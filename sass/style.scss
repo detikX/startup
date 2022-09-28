@@ -746,18 +746,19 @@ main {
     // color: green;
   }
   .titles {
-    display: inline-block;
-    position: sticky;
-    vertical-align: top;
-    text-align: left;
+    display: block;
+    // position: sticky;
+    // vertical-align: top;
+    text-align: center;
     top: 32px;
     margin-left: 8px;
+    margin-bottom: 16px;
     @media screen and (max-width:766px) {
       position: initial;
     }
     h3 {
       font-size: 44px;
-      width: 360px;
+      // width: 360px;
       @media screen and (max-width:766px) {
         width: auto;
       }
