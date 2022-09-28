@@ -926,7 +926,7 @@ main {
   top: 150px;
   width: 390px;
   opacity: .4;
-  animation: MoveUpDowns 4.7s linear infinite;
+  animation: MoveUpDowns 6s linear infinite;
   &.twox {
     left: initial;
     width: 120px;
@@ -1100,14 +1100,14 @@ main {
 }
 
 .btn-lanjut {
-  border: 1px solid transparent;
-  background: linear-gradient(145deg, #ff2759, #b83957);
-  padding: 8px;
+  border: 1px solid transparent !important;
+  background: linear-gradient(145deg, #ff2759, #b83957) !important;
+  padding: 8px !important;
   // box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   margin: 0 auto;
   color: white;
-  display: block;
-  text-align: center;
+  display: block !important;
+  text-align: center !important;
   top: 0;
   position: relative;
   animation: MoveUpDownsx .3s linear infinite;
