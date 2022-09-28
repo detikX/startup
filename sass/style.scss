@@ -56,6 +56,12 @@ main {
       margin: 0 auto;
       display: block;
       text-align: center;
+
+      .blue-soft {
+        @media screen and (max-width:766px) {
+          padding: 8px !important;
+        }
+      }
   }
   
 p {
