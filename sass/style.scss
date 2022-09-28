@@ -841,6 +841,10 @@ main {
   }
 }
 
+.modal-header {
+  border-bottom: 1px solid transparent !important;
+}
+
 .progress-bars {
   position: absolute;
   top: 0;
