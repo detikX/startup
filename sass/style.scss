@@ -919,7 +919,8 @@ main {
 .ceki {
     top: 0;
     background-color: #008f6b;
-    padding: 4.5px;
+    // padding: 4.5px;
+    padding: 5px;
     font-size: 20px;
     z-index: 9989;
     position: sticky;
@@ -993,12 +994,13 @@ main {
 .progress-bars-inner {
   position: relative;
   width: 0%;
-  padding: 0;
+  // padding: 0;
   background-color: #fec800;
   color: transparent;
-  font-size: 6px;
+  // font-size: 6px;
   font-weight: 700;
-  padding: 0px;
+  height: 5px;
+  // padding: 0px;
   text-align: center;
 }
 
@@ -1009,6 +1011,13 @@ main {
   cursor: pointer;
   .fa-angle-up {
     font-size: 32px;
+  }
+}
+main{
+  .container {
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
   }
 }
 .load-show-four {
